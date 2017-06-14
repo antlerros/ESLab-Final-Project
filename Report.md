@@ -1,7 +1,7 @@
 # Hands-free Fan Control with Amazon Alexa Voice Service Using Raspberry Pi
 以 Raspberry Pi 為媒介，利用聲控來操作小風扇。聲控的部分是使用 Amazon Alexa Voice Service (AVS)，並使用Alexa Skill Kit進行開發。 Alexa Skill 就是 Alexa 的擴充功能。
 
-https://d2mxuefqeaa7sj.cloudfront.net/s_7F8784897FF7627480AE17DDC751000485EDD4F0E44531E0ACC4E9439C2F1431_1497439305735_photo_2017-06-14_19-11-35.jpg
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_7F8784897FF7627480AE17DDC751000485EDD4F0E44531E0ACC4E9439C2F1431_1497439305735_photo_2017-06-14_19-11-35.jpg)
 
 ## **硬體設備**
 - **Raspberry Pi 3** - 安裝 Alexa Voice Service 及 控制擴充功能的 Server。
@@ -66,9 +66,7 @@ https://d2mxuefqeaa7sj.cloudfront.net/s_7F8784897FF7627480AE17DDC751000485EDD4F0
   
   - **Circuit**
     為了控制馬達，我們購買了 L293D 馬達驅動晶片，主要是為了避免將 Raspberry Pi 直接接到馬達，而造成 Raspberry Pi 不必要的損害。因此，整個電路是以 L293D 為核心去串接而成，以下簡單介紹各個連接的pins以及該如何使馬達運作。
-
-
-https://d2mxuefqeaa7sj.cloudfront.net/s_227F1E51FE01236FC3D832CB686A7A7280872961015871FF092C9B1C626C02FF_1497412154716_F5EFUKZINKX3299.MEDIUM.jpg
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_227F1E51FE01236FC3D832CB686A7A7280872961015871FF092C9B1C626C02FF_1497412154716_F5EFUKZINKX3299.MEDIUM.jpg)
 
     - Input 1 & Input 2
       L293D可以一次驅動兩顆馬達 (分成晶片左右半邊)，一顆馬達由兩個input去控制，而這次我們只用到了其中的 Input 1 和 Input 2。 Input 1 代表該馬達為順時鐘轉， Input 2 則表示馬達為逆時鐘旋轉。因此，在正常的情況之下，給定 Input 1 和 Input 2 的值為相反的。
